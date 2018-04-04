@@ -6,9 +6,13 @@
     }
     header,
 nav{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-wrap:wrap;
-	justify-content: space-around;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 nav{
@@ -33,16 +37,29 @@ body{
 
 }
 body{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction:column;
-	justify-content:space-around;
-	align-items:center;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	-ms-flex-pack:distribute;
+	    justify-content:space-around;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 }
 div.item1{
 	background-color:black;
@@ -53,14 +70,18 @@ h1,h2,p{
 	font-size:1rem;
 	background-color:black;
 	color:orange;
-	align-self:center;
+	-ms-flex-item-align:center;
+	    -ms-grid-row-align:center;
+	    align-self:center;
 	margin:0 auto;
 	text-align:center;
 
 }
 p{
 	font-size:1.3rem;
-	align-self:center;
+	-ms-flex-item-align:center;
+	    -ms-grid-row-align:center;
+	    align-self:center;
 	margin:0 auto;
 	padding:15px;
 	margin-top:10px;
@@ -78,16 +99,25 @@ nav{
 	list-style-type: none;
 	
 	width:100%;
-	align-content:stretch;
+	-ms-flex-line-pack:stretch;
+	    align-content:stretch;
 
 }
 li{
 
-	justify-content:center;
+	-webkit-box-pack:center;
+
+	    -ms-flex-pack:center;
+
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 	border:1px solid orange;
 	background-color:black;
-	align-items:center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 	height:50px;
 	width:100%;
 	/*align-self: center;*/
@@ -101,6 +131,8 @@ a{
 div.item4 img {
 	margin-top:20px;
 	border:20px solid orange;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
     margin-top: 20px;
     margin:auto;
